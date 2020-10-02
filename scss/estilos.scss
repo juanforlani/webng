@@ -121,7 +121,7 @@ h3{
 	transition: 0.3s;
 }
 .juegos .imagenes img:hover{
-	transform: scale(1.1,1.1);
+	transform: scale(1.03,1.03);
 
 }
 
@@ -183,8 +183,17 @@ h3{
 #videos h2{
 	background-color: #FFDA22;
 }
-
-
+@media (max-width: 767px) {
+    .top-content .carousel-control-prev, 
+    .top-content .carousel-control-next { display: none; }
+    .top-content .carousel-indicators li { margin-left: 10px; margin-right: 10px; }
+}
+.carousel-control-prev{
+	left: -150px;
+}
+.carousel-control-next{
+	left: 900px;
+}
 #contacto form{
 	font-family: 'Bebas Neue';
 	font-size: 22px;

@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="keywords" content="E-SPORTS, NORDIC GODS, APEX, APEX LEGENDS, VALORANT, TEAM, EQUIPO, ROGUE COMPANY">
+	<meta name="description" content="Nordic Gods es un equipo de e-Sports Latino Americano con base en Chile principalmente dedicado a Apex Legends y Valorant tanto en consola como en PC">
 	<title>NG e-Sports</title>
+	<link rel="icon" href="./images/iconovikingo.png">
 	<link rel="stylesheet" type="text/css" href="./bootstrap-style/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -13,11 +16,11 @@
 		<div id="menu">
 			<nav>
 				<ul>
-					<li><a href="#integrantes" target="_self">Integrantes</a></li>
-					<li><a href="#juegos" target="_self">Juegos</a></li>
-					<li><a href="#competencias" target="_self">Competencias</a></li>
-					<li><a href="#videos" target="_self">Videos</a></li>
-					<li><a href="#contacto" target="_self">Contacto</a></li>
+					<li><a href="#integrantes" target="_self" class="smooth">Integrantes</a></li>
+					<li><a href="#juegos" target="_self" class="smooth">Juegos</a></li>
+					<li><a href="#competencias" target="_self" class="smooth">Competencias</a></li>
+					<li><a href="#videos" target="_self" class="smooth">Videos</a></li>
+					<li><a href="#contacto" target="_self" class="smooth">Contacto</a></li>
 				</ul>
 			</nav>
 		</div>	
@@ -42,6 +45,7 @@
 					<p>Valorant</p>
 				</div>
 			</div>
+			<br><br>
 		</section>
 		
 		<section id="integrantes">
@@ -123,12 +127,47 @@
 		</section>
 		<section id="videos">
 			<h2 class="titulos">VIDEOS</h2>
-			<div class="container">
-				<div class="row">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/a-HAbvcS5Cg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-lg-6"></iframe>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/88-qOFVZDkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-lg-6"></iframe>
-				</div>
-			</div>  
+			<div class="row">
+            <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <!-- Carousel -->
+                <div id="carousel-example" class="carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example" data-slide-to="1"></li>
+                        <li data-target="#carousel-example" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/a-HAbvcS5Cg" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/88-qOFVZDkw" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wlD8HGDcLqg" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- End carousel -->
+            </div>
+        </div>
+        <!-- End carousel row -->
+    </div>
+</div>  
 		<br><br>
 		</section>
 		<section id="contacto">
