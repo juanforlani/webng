@@ -9,10 +9,12 @@ h1{
     display: block;
     background-color:#28252C; 
     margin: 0;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-left: 15px;
     font-family: 'Bebas Neue';
     font-size: 40px;
+    position: fixed;
+    z-index: 1040;
 }
 h1 a{
 	text-align: center;
@@ -124,21 +126,29 @@ h3{
 	transform: scale(1.03,1.03);
 
 }
-
-#integrantes{
-	background-color: #FFDA22;
+#section-juegos h2{
+	padding-bottom: 30px;
 }
-#integrantes h2{
+#section-juegos{
+	padding-top: 73px;
+	padding-bottom: 57px;
+}
+
+#section-integrantes{
+	background-color: #FFDA22;
+	padding-top: 73px;
+}
+#section-integrantes h2{
 	background-color: #FFDA22;
 	margin-bottom: 0;
 
 }
-#integrantes div{
+#section-integrantes div{
 	display: inline-block;
 	text-align: center;
 	margin: 27px;  
 }
-#integrantes img{
+#section-integrantes img{
 	width: 280px;
 }
 .imagenes {
@@ -158,6 +168,7 @@ h3{
 	display: block;
 	align-self: auto;
 	margin-right: 18px;
+	padding-top: 30px;
 }
 .playerCard{
 	width: 279px;
@@ -167,21 +178,24 @@ h3{
 	transform: scale(1.1,1.1);
 }
 
-#competencias h2{
+#section-competencias h2{
 	background-color: #28252C;
 	color: #FFDA22;
 }
-#competencias{
+#section-competencias{
 	background-color: #28252C;
+	padding-top: 73px;
 }
 .table{
 	margin-bottom: 0;
 }
-#videos{
+#section-videos{
 	background-color: #FFDA22;
+	padding-top: 73px;
 }
-#videos h2{
+#section-videos h2{
 	background-color: #FFDA22;
+	padding-bottom: 30px;
 }
 @media (max-width: 767px) {
     .top-content .carousel-control-prev, 
@@ -194,9 +208,12 @@ h3{
 .carousel-control-next{
 	left: 900px;
 }
-#contacto form{
+#section-contacto form{
 	font-family: 'Bebas Neue';
 	font-size: 22px;
+}
+#section-contacto{
+	padding-top: 73px;
 }
 
 footer p{
@@ -207,4 +224,5 @@ footer p{
 	margin-bottom: 0;
     padding-bottom: 15px;
     padding-top: 15px;
+    width: 100%;
  }
