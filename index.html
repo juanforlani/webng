@@ -13,14 +13,14 @@
 <body>
 	<header>
 		<h1><a href="index.html">Nordic Gods e-Sports</a></h1>
-		<div id="menu">
-			<nav>
+		<div id="menu" class="fixed-top">
+			<nav class="">
 				<ul>
-					<li><a href="#integrantes" target="_self" class="smooth">Integrantes</a></li>
-					<li><a href="#juegos" target="_self" class="smooth">Juegos</a></li>
-					<li><a href="#competencias" target="_self" class="smooth">Competencias</a></li>
-					<li><a href="#videos" target="_self" class="smooth">Videos</a></li>
-					<li><a href="#contacto" target="_self" class="smooth">Contacto</a></li>
+					<li><a href="#section-integrantes" target="_self" class="smooth">Integrantes</a></li>
+					<li><a href="#section-juegos" target="_self" class="smooth">Juegos</a></li>
+					<li><a href="#section-competencias" target="_self" class="smooth">Competencias</a></li>
+					<li><a href="#section-videos" target="_self" class="smooth">Videos</a></li>
+					<li><a href="#section-contacto" target="_self" class="smooth">Contacto</a></li>
 				</ul>
 			</nav>
 		</div>	
@@ -31,7 +31,7 @@
 		
 	</header>
 	<main>	
-		<section id="juegos">
+		<section id="section-juegos">
 			<div class="juegos">
 				<h2 class="titulos">JUEGOS</h2>
 				<div class="imagenes">
@@ -48,7 +48,7 @@
 			<br><br>
 		</section>
 		
-		<section id="integrantes">
+		<section id="section-integrantes">
 			<h2 class="titulos">INTEGRANTES</h2>
 			<div class="playerCard" class="col-lg-3">
 				<img src="./images/lifeline.jpg" alt="imagen de lifeline">
@@ -70,9 +70,10 @@
 				<h3>FREDDY</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in ullamcorper justo. Quisque quis lectus quis libero vehicula pretium et ut risus.</p>
 			</div>
+			<br><br><br>
 		
 		</section>
-		<section id="competencias">
+		<section id="section-competencias">
 			<h2 class="titulos">COMPETENCIAS</h2>
 			<div class="container">
 				<table class="table table-hover table-striped table-dark">
@@ -107,25 +108,45 @@
 							<td>ZG</td>
 							<td>3-1</td>
 							<td>3</td>
+							<td>
+								<ul>
+									<li>Flax</li>
+									<li>Freddy</li>
+								</ul>
+							</td>
 						</tr>
 						<tr>
 							<td>WLeague</td>
 							<td>RR</td>
 							<td>3-2</td>
 							<td>3</td>
+							<td>
+								<ul>
+									<li>Tomas</li>
+									<li>Tobal</li>
+									<li>Reus</li>
+								</ul>
+							</td>
 						</tr>
 						<tr>
 							<td>Liga Master</td>
 							<td>FNR</td>
 							<td>2-3</td>
 							<td>0</td>
+							<td>
+								<ul>
+									<li>Reus</li>
+									<li>Tomas</li>
+									<li>Flax</li>
+								</ul>
+							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div><br><br>
 			
 		</section>
-		<section id="videos">
+		<section id="section-videos">
 			<h2 class="titulos">VIDEOS</h2>
 			<div class="row">
             <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
@@ -170,7 +191,7 @@
 </div>  
 		<br><br>
 		</section>
-		<section id="contacto">
+		<section id="section-contacto">
 			<h2 class="titulos">CONTACTATE CON NOSOTROS</h2>
 				<div class="container" class="col-lg-offset-4 col-lg-4 col-lg-offset-4">
 				<section><a name="form"></a>
@@ -214,7 +235,7 @@
 						</div>		
 						<div class="form-group">
 							<label for="mensaje" >Mensaje</label>
-							<textarea name="mensaje"></textarea>
+							<textarea class="form-control" name="mensaje"></textarea>
 						</div>
 						<div class="form-group">
 							<label class="form-group">Desea recibir las ultimas noticias de Nordic Gods?</label>
@@ -235,5 +256,9 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
 	<script src="./js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+	<script type="text/javascript">
+		var scroll = new SmoothScroll('a[href*="section-"]');
+	</script>
 </body>
 </html>
